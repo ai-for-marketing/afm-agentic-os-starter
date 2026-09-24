@@ -1,0 +1,25 @@
+# Secrets and local config: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+id_rsa*
+id_ed25519*
+secrets/
+credentials*.json
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Installer backups and temp files
+*.bak
+*.tmp
+*.log
