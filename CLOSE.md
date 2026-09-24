@@ -74,11 +74,16 @@ to run it on one should confirm.
   backups.
 - `.github/workflows/shellcheck.yml`: runs shellcheck on every `*.sh` file and every file
   with a shell shebang, on every pull request (and on pushes to `master`). Verified that it
-  passes on the real script and fails on a deliberately broken one.
+  passes on the real script and fails on a deliberately broken one (tested locally).
+  **On GitHub it currently shows a red ❌ without running.** GitHub reports "The job was not
+  started because your account is locked due to a billing issue." It was re-run once and got
+  the same result. Once billing is sorted under the organisation's Settings → Billing, re-run
+  it from the PR's Checks tab.
 
 ## Open decisions for the owner
 
 1. Whether to rewrite public history to remove the items in the history table above.
 2. Whether MIT is the right licence.
-3. Whether to turn on GitHub secret scanning (free for public repositories under
+3. Fix the GitHub billing lock so automatic checks (GitHub Actions) can run at all.
+4. Whether to turn on GitHub secret scanning (free for public repositories under
    Settings → Code security) so future leaks are caught automatically.
