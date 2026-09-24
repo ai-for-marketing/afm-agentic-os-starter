@@ -37,7 +37,7 @@ Run order: BUILD → QA → UX in sequence to ship a verified, well-fronted prod
 
 ## The Blueprint (Stage 0.5) -- the keystone artifact
 
-Lives **in each project repo** (`BLUEPRINT.md` + a traceability matrix / CSV), versioned, living. The vault holds this methodology; each repo holds its own blueprint. Two modes:
+Lives **in each project repo** (`BLUEPRINT.md` + a traceability matrix / CSV), versioned, living. This methodology lives in one shared place; each repo holds its own blueprint. Two modes:
 
 - **GREENFIELD** (new project): North Star → research market/audience/competitors/required surfaces → draft the blueprint.
 - **BROWNFIELD** (existing project): North Star + the **actual code and database, read fresh** (never the building-chat's memory -- that agent rationalises its own mess; use a fresh adversarial read) → reverse-engineer what exists → structure it → produce the gap-plan. **Do not rebuild; fix forward.**
@@ -52,22 +52,23 @@ Every blueprint produces FOUR outputs, not one:
 
 The reason auto-loops stall is missing standing access. The blueprint front-loads **every key, token, ID, OAuth connection, migration, and dashboard toggle the loop will need**, gathered in ONE batch up front with clickable steps, so the owner provisions everything in one sitting and the loop then runs uninterrupted. Where possible the goal is **standing execution access** (e.g. a service-role DB connection so the agent runs its own migrations and never hands the owner SQL). Tradeoff: powerful keys in agent hands is exactly why HARDEN exists -- provision broadly, then harden. Anything unknowable until build is batched and surfaced as a single owner-gate, never dripped one at a time.
 
-## The five projects
+## Choosing the outcome per project
 
-| Project | One-line guarantee | Shape / outcome |
-|---|---|---|
-| **copublish** | For INDIVIDUALS: automate research, strategy, planning, publishing, reporting, and creation of top-1% on-brand content in *their* tone (quality, not volume). | Money-maker. Outcome = engagement. |
-| **Delivery Engine** | Same for BUSINESSES: gather business context → content / lead-gen sequence / paid-ads (targeting+budget+copy+visuals) ready to run. | Money-maker. Outcome = measurable results. |
-| **AI for Marketing** | Active consulting + development. | Services, not yet a productised input→output SaaS. |
-| **Harmonance** | Spread sound healing to the masses, free forever. | Free. Outcome = reach/impact, NOT revenue -- do not force a revenue lens. |
-| **GridOS** | The glue / operating + nervous system connecting everything. | Internal. "User" = the operator/fleet; outcome = operator efficiency. |
+Not every project is a money-maker. Pick the outcome the North Star actually promises:
 
-Money-makers = copublish + Delivery Engine. The 5-loop system fits the productised two cleanly; Harmonance gets a reach-outcome; GridOS gets an operator-efficiency outcome.
+| Project shape | Outcome to measure |
+|---|---|
+| Paid product for individuals or businesses | Engagement / measurable results for the user |
+| Services (consulting, development) | Client results; not yet a productised input→output SaaS |
+| Free / mission-driven | Reach and impact, NOT revenue -- do not force a revenue lens |
+| Internal tooling | Operator efficiency ("user" = the operator/fleet) |
+
+The 5-loop system fits productised projects cleanly; free projects get a reach outcome; internal tools get an operator-efficiency outcome.
 
 ## Goal-prompt index (the executable loops)
 
-`/root/AfM-vault/docs/playbooks/`: `master-blueprint-goal.txt` (GOAL 0 BLUEPRINT, greenfield + brownfield in one self-detecting prompt) · `master-build-goal-v2.txt` (BUILD) · `master-qa-proof-goal-v2.txt` (QA-PROVE) · `master-uxui-goal.txt` (UX) · `master-value-goal.txt` (VALUE) · `master-harden-observe-goal.txt` (HARDEN+OBSERVE). All six authored, em-dash-clean, under 4000 chars. Run order: BLUEPRINT (+ human sign-off) -> BUILD -> QA -> UX, then VALUE + HARDEN as standing loops.
+The full system has one goal prompt per loop (not included in this starter, which ships only the commander prompt `master-goal-prompt.txt`): `master-blueprint-goal.txt` (GOAL 0 BLUEPRINT, greenfield + brownfield in one self-detecting prompt) · `master-build-goal-v2.txt` (BUILD) · `master-qa-proof-goal-v2.txt` (QA-PROVE) · `master-uxui-goal.txt` (UX) · `master-value-goal.txt` (VALUE) · `master-harden-observe-goal.txt` (HARDEN+OBSERVE). All six authored, em-dash-clean, under 4000 chars. Run order: BLUEPRINT (+ human sign-off) -> BUILD -> QA -> UX, then VALUE + HARDEN as standing loops.
 
 ## Status note
 
-The blueprint and owner-gate manifest were the missing structure. With them defined up front, "execution becomes effortless" is finally true -- the loops carry it. The methodology is reusable across all five; the owner's scarce attention is not, so it is spent only at the three human gates.
+The blueprint and owner-gate manifest were the missing structure. With them defined up front, "execution becomes effortless" is finally true -- the loops carry it. The methodology is reusable across every project; the owner's scarce attention is not, so it is spent only at the three human gates.

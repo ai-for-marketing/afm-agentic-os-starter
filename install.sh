@@ -28,4 +28,4 @@ echo "  3. Paste it into your Claude Code / Codex / Gemini session IN the projec
 echo "  4. The commander loop self-localises to that project + runs"
 echo ""
 echo "Installed the STARTER (method + loop). For the full integrated harness (skills, conduct"
-echo "loops, watchdog, vault, GridOS), talk to Jakub."
+echo "loops, watchdog, vault, GridOS), see README.md."

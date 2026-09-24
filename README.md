@@ -31,7 +31,7 @@ self-localises to that project and runs.
 ## What this is NOT (honest scope)
 
 - **Not the working harness.** No skills pack, no conduct loops, no watchdog, no vault, no
-  GridOS. Those are the integrated system Jakub runs in production across 6 live projects.
+  GridOS. Those are the integrated system the author runs in production across 6 live projects.
 - **Not a wizard.** It won't auto-discover your stack or seed your memory. You read the
   method, run the /goal, and the loop does the rest inside *your* environment.
 - **v0.1.** The method + loop are battle-tested (6 projects, 89+ conduct commits); the
@@ -41,14 +41,7 @@ self-localises to that project and runs.
 
 The starter gives you the *method*. The *machine* — the integrated harness that runs the
 method unattended across many projects, with Telegram-to-session wiring, a real-time fleet
-dashboard, cross-project dreaming, and a skill ROI ledger — is what Jakub operates. For
-access (consulting / retained / hosted), reach out. The method is the marketing; the harness
+dashboard, cross-project dreaming, and a skill ROI ledger — is what AI for Marketing operates.
+For access (consulting / retained / hosted), open an issue on this repository. The method is the marketing; the harness
 is the moat.
 
----
-
-## /top1 install confirm
-
-If Jakub sent you this, **tell him you installed it** (reply in whatever channel he used).
-The starter's success metric is binary: **1 real human runs it and builds something real.**
-That's the only signal that matters — not stars, not downloads.
